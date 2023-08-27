@@ -1,0 +1,196 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
+  .select_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+
+    .select_heading {
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      font-weight: 550;
+    }
+
+    .select_middle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+
+      .select_middle_head {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 8rem;
+
+        .select_middle_row_button {
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          width: 40%;
+          height: 8rem;
+
+          .toggle-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 55%;
+            height: 45%;
+            border-radius: 6rem;
+            background-color: #1e4c90;
+
+            .toggle-button {
+              padding: 10px 15px;
+              border: none;
+              background-color: white;
+              border-radius: 6rem;
+              color: #1e4c90;
+              cursor: pointer;
+
+              &.active {
+                background-color: #1e4c90;
+                font-weight: 600;
+                color: white;
+              }
+            }
+          }
+        }
+
+        .select_middle_row_right {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 60%;
+          height: 8rem;
+
+          .head_item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #7994bc;
+            color: white;
+            width: 20%;
+            height: 75%;
+            cursor: pointer;
+            position: relative;
+
+            &.selected {
+              background-color: #1e4c90;
+              color: white;
+
+              .triangle {
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-top: 10px solid #1e4c90;
+                bottom: -10%;
+              }
+            }
+          }
+        }
+      }
+
+      .select_middle_row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1.5px solid grey;
+        width: 100%;
+        height: 3.5rem;
+
+        .select_middle_row_left {
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          width: 40%;
+          height: 100%;
+        }
+
+        .select_middle_row_right {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 60%;
+          height: 100%;
+
+          .middle_item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            height: 100%;
+            color: #717170;
+            font-weight: 550;
+
+            &.selected {
+              color: #1e4c90;
+            }
+          }
+        }
+      }
+
+      .select_middle_row2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 4rem;
+
+        .select_middle_row_left {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          width: 40%;
+          height: 100%;
+        }
+
+        .select_middle_row_right {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 60%;
+          height: 100%;
+
+          .middle_item2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            height: 100%;
+            font-size: 0.9rem;
+            color: #717170;
+
+            &.selected {
+              color: #1e4c90;
+            }
+          }
+        }
+      }
+    }
+
+    .select_button_next {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #1e4c90;
+      width: 40%;
+      height: 3rem;
+      color: white;
+      border-radius: 0.3rem;
+    }
+    
+  }
+  
+}

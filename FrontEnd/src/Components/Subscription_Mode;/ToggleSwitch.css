@@ -1,0 +1,103 @@
+
+  .switch {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+  }
+  
+  .switch input {
+    appearance: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+  }
+  
+  .switch input::before,
+  .switch input::after {
+    z-index: 2;
+    position: absolute;
+    top: 56%;
+    transform: translate(-50%);
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  .switch input::before {
+    content: "Monthly";
+    padding: 10px 0 8px 20px; 
+    margin-left: 39px;
+    top: 50%;
+   transform: translate(-50%, -50%);
+   font-weight: bold;
+   font-size: 15px;
+   color: #1e4d91;
+  }
+  
+  .switch input::after {
+    content: "Yearly";
+       padding: 10px 10px 8px 0; 
+        right: 50px;
+            top: 50%;
+            transform: translate(50%, -50%);
+            font-weight: bold;
+            font-size: 15px;
+            color: #1e4d91;
+  }
+  
+  .switch input:checked {
+    background: #1e4d91;
+  }
+  
+  .switch label {
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    bottom: 4px;
+    border-radius: 20px;
+  }
+  
+  .switch input {
+    transition: 0.25s;
+  }
+  
+  .switch input:checked::after{
+  color: #ffff;
+    transition: color 0.5s;
+  }
+  .switch input:checked::before {
+    color: #1e4d91;
+    transition: color 0.5s;
+  }
+  
+  .switch input:checked + label {
+    left: 10px;
+    right: 100px;
+    bottom: 8px;
+    background: #ffff;
+    transition: left 0.4s, right 0.4s;
+  }
+  
+  .switch input:not(:checked) {
+    background: #1e4d91;
+    transition: background 0.4s;
+  }
+  
+  .switch input:not(:checked)::before {
+    color: #fff;
+    transition: color 0.4s;
+  }
+  
+  .switch input:not(:checked)::after {
+    color: #1e4d91;
+    transition: color 0.4s;
+  }
+  
+  .switch input:not(:checked) + label {
+    left: 100px;
+    right: 10px;
+    bottom: 8px;
+    background: #ffff;
+    transition: left 0.4s , right 0.4s
+  }
